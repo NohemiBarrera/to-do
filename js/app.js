@@ -1,3 +1,14 @@
+var newEntry = document.getElementById("message");
+
+newEntry.addEventListener("keyup", contadorDeCaracteres);
+
+
+function contadorDeCaracteres(){
+  var numeroCaracteres = newEntry.value.length;
+  document.getElementById("caracteres").innerText = numeroCaracteres;
+}
+
+
 (function () {
 	var contador = 0;
 
